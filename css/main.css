@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+li {
+  list-style: none;
+}
 .fp-warning, .fp-watermark {
     display: none;
 }
@@ -24,6 +27,20 @@
     text-align: center;
     color: #FFF;
     font-size: 3em;
+  }
+  #myMenu {
+    position: fixed;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #ccc;
+  }
+  
+  #myMenu li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0;
+    list-style: none;
   }
 
   /* Animations */

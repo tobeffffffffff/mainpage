@@ -14,6 +14,7 @@ elements.forEach(function(element) {
 var fullPageInstance = new fullpage('#fullpage', {
     navigation: true,
     verticalCentered: false,
+    anchors:['page1', 'page2', 'page3', 'page4'],
     onLeave: function(){
         $('.section [data-aos]').each(function(){
             $(this).removeClass("aos-animate")
