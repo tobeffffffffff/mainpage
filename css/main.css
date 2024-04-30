@@ -9,6 +9,28 @@ li {
 .fp-warning, .fp-watermark {
     display: none;
 }
+canvas#live2d {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: 100;
+}
+.part1 {
+  background-image: url('../images/news-bg.png');
+}
+
+.part2 {
+  background-image: url('../images/news-bg.png');
+}
+
+.part3 {
+  background-image: url('../images/news-bg.png');
+}
+
+.part4 {
+  background-image: url('../images/news-bg.png');
+}
+
 .test {
     width: 200px;
     height: 200px;
@@ -40,6 +62,7 @@ li {
   }
   
   #myMenu li {
+    /* display: inline-block; */
     margin: 10px;
     padding: 0;
     list-style: none;
@@ -50,6 +73,43 @@ li {
     cursor: pointer !important;
   }
 
+  #myMenu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .container {
+    position: absolute;
+    background-color: pink;
+    width: 90%;
+    height: 100vh;
+    left: 5%;
+    padding: 30px 40px 30px;
+    
+  }
+  .screen {
+    background-color: red;
+    width: 95%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+  }
+  .carousel {
+    width: 800px;
+    float: left;
+    height: 100%;
+    background-color: green;
+  }
+  .advertisement {
+    width: 600px;
+    height: 100%;
+    background-color: aquamarine;
+    float: right;
+  }
   /* Animations */
 
 [data-aos="example-anim1"] {
