@@ -129,6 +129,9 @@ if (this.canvas.addEventListener) {
     this.canvas.addEventListener("mousemove", mouseEvent, false);
 }
 
+this.canvas.style.left = "0px";
+this.canvas.style.top = "350px";
+
 var isDragging = false;
 var mouseOffsetx = 0;
 var mouseOffsety = 0;
@@ -148,12 +151,12 @@ function mouseEvent(e) {
             if(movex > window.innerWidth - document.getElementById(LAppDefine.CANVAS_ID).width)
                 movex = window.innerWidth - document.getElementById(LAppDefine.CANVAS_ID).width;
             if(movex < 0) movex = 0;
-            if(movey > window.innerHeight - document.getElementById(LAppDefine.CANVAS_ID).height)
-                movey = window.innerHeight - document.getElementById(LAppDefine.CANVAS_ID).height;
+            if(movey > (window.innerHeight - document.getElementById(LAppDefine.CANVAS_ID).height))
+                movey = window.innerHeight - document.getElementById(LAppDefine.CANVAS_ID).height ;
             if(movey < 0) movey = 0;
             if(LAppDefine.IS_DRAGABLE) {
                 document.getElementById(LAppDefine.CANVAS_ID).style.left = movex + "px";
-                document.getElementById(LAppDefine.CANVAS_ID).style.top = movey + "px";
+                // document.getElementById(LAppDefine.CANVAS_ID).style.top = (movey + 200) + "px";
             }
         }
     } else if (e.type == "mouseup") {
